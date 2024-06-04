@@ -9,7 +9,7 @@ function App() {
     const URL_PRODUTOS = 'https://dripstore-api-0r61.onrender.com/api/produto'
     try {
       const result = await axios.get(URL_PRODUTOS)
-      console.log(result);
+      console.log(result.data);
     } catch (error) {
       console.log(`Error ao buscar o produto: ${error}`);
     }
