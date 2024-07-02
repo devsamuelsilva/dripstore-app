@@ -6,12 +6,17 @@ import App from './App.jsx'
 
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Login from './components/pages/Login.jsx';
+import Cadastrar from './components/pages/Cadastrar.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Login/>,
   },
+  {
+    path: "/cadastrar",
+    element: <Cadastrar/>,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
